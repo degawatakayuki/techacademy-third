@@ -261,7 +261,204 @@ header .humbugerMenu .headerNav-sp li {
 }
 
 /* @use "object/component/_bamburger"; */
-/* @use "object/project/body-filter"; */
+.p-mainVisual {
+  background: linear-gradient(13deg, #0384f5, #0068c0 67%, transparent 67%), url(../images/main_photo-sp.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+@media (min-width: 769px) {
+  .p-mainVisual {
+    height: 50rem;
+    background: unset;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-image: url("../../../images/main_photo.jpg");
+    background-size: cover;
+  }
+}
+.p-mainVisual .mainVisualContainer {
+  position: relative;
+  padding-bottom: 4rem;
+}
+@media (min-width: 769px) {
+  .p-mainVisual .mainVisualContainer {
+    width: 100%;
+    max-width: 120.4rem;
+  }
+}
+@media (min-width: 769px) {
+  .p-mainVisual .mainVisualContainer .mainCatch {
+    padding-top: 9.8rem;
+  }
+}
+.p-mainVisual .mainVisualContainer .mainCatch h1 {
+  display: inline-block;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.5384615385;
+  margin-top: 20rem;
+  margin-bottom: 6.9rem;
+}
+@media (min-width: 769px) {
+  .p-mainVisual .mainVisualContainer .mainCatch h1 {
+    font-size: 4rem;
+    line-height: 1;
+    color: #fff;
+    margin-top: unset;
+    margin-bottom: 3.9rem;
+  }
+}
+.p-mainVisual .mainVisualContainer .mainCatch h1 span {
+  display: inline-block;
+  background: #fff;
+  padding-left: 0.5rem;
+  padding-right: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+@media (min-width: 769px) {
+  .p-mainVisual .mainVisualContainer .mainCatch h1 span {
+    background: unset;
+    padding-left: unset;
+    padding-right: unset;
+    padding-bottom: unset;
+  }
+}
+.p-mainVisual .mainVisualContainer .mainCatch h1 span:last-of-type {
+  margin-top: 0.5rem;
+}
+@media (min-width: 769px) {
+  .p-mainVisual .mainVisualContainer .mainCatch h1 span:last-of-type {
+    margin-top: unset;
+  }
+}
+.p-mainVisual .mainVisualContainer .mainCatch p {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.8;
+}
+@media (min-width: 769px) {
+  .p-mainVisual .mainVisualContainer .mainCatch p {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.75;
+  }
+}
+.p-mainVisual .mainVisualContainer .mainCatch ul {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.8;
+  margin-top: 2.8rem;
+  margin-left: 2.2rem;
+  margin-bottom: 3.3rem;
+}
+@media (min-width: 769px) {
+  .p-mainVisual .mainVisualContainer .mainCatch ul {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.75;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+}
+.p-mainVisual .mainVisualContainer .mainCatch ul li {
+  position: relative;
+}
+.p-mainVisual .mainVisualContainer .mainCatch ul li::before {
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  content: "\f058";
+  font: var(--fa-font-solid);
+  color: #fff;
+  font-weight: normal;
+  left: -2.2rem;
+  top: 1.4rem;
+  transform: translateY(-50%);
+}
+.p-mainVisual .mainVisualContainer .mainCatch a {
+  display: block;
+  width: 30rem;
+  height: 5.6rem;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #454545;
+  background: #bdfa3e;
+  border-radius: 0.5rem;
+  padding: 2rem 0;
+  margin: 0 auto;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.16);
+}
+@media (min-width: 769px) {
+  .p-mainVisual .mainVisualContainer .mainCatch a {
+    margin: unset;
+  }
+}
+.p-mainVisual .mainVisualContainer .mainBg {
+  position: absolute;
+  display: flex;
+  top: 25rem;
+  right: 0.8rem;
+}
+@media (min-width: 769px) {
+  .p-mainVisual .mainVisualContainer .mainBg {
+    top: unset;
+    bottom: -8%;
+    right: -3.9%;
+  }
+}
+.p-mainVisual .mainVisualContainer .mainBg p {
+  display: block;
+  width: 9.5rem;
+  height: 9.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.4166666667;
+  border-radius: 50%;
+  background: linear-gradient(125deg, #effcad, #dcf98f 50%, #bdfa3e 100%);
+  padding: 3rem 0;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.16);
+}
+@media (min-width: 769px) {
+  .p-mainVisual .mainVisualContainer .mainBg p {
+    width: 14rem;
+    height: 14rem;
+    font-size: 1.5rem;
+    line-height: 1.6666666667;
+    padding: 4.5rem 0;
+  }
+}
+.p-mainVisual .mainVisualContainer .mainBg p:first-of-type {
+  margin-right: 0.4rem;
+}
+@media (min-width: 769px) {
+  .p-mainVisual .mainVisualContainer .mainBg p:first-of-type {
+    margin-right: 1rem;
+  }
+}
+.p-mainVisual .mainVisualContainer .mainBg p .po {
+  font-family: "Poppins";
+  font-size: 1.5rem;
+  line-height: 1.1333333333;
+}
+@media (min-width: 769px) {
+  .p-mainVisual .mainVisualContainer .mainBg p .po {
+    font-size: 2.2rem;
+    line-height: 1.1363636364;
+  }
+}
+.p-mainVisual .mainVisualContainer .mainBg p .ca {
+  letter-spacing: -0.1em;
+}
+@media (min-width: 769px) {
+  .p-mainVisual .mainVisualContainer .mainBg p .ca {
+    letter-spacing: unset;
+  }
+}
+
 /* @use "object/utility/spacing"; */
 
 /*# sourceMappingURL=style.css.map */
