@@ -8,9 +8,10 @@
 @use "layout/_header.scss";
 @use "layout/_footer.scss";
 
-/* @use "object/component/_bamburger"; */
+@use "object/component/_swiper.scss";
 
 @use "object/project/_mainVisual.scss";
+@use "object/project/_corpIntroduction.scss";
 
 /* @use "object/utility/spacing"; */
 

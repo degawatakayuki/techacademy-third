@@ -76,7 +76,6 @@ select {
   * {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
@@ -260,7 +259,77 @@ header .humbugerMenu .headerNav-sp li {
   padding-bottom: 0.3rem;
 }
 
-/* @use "object/component/_bamburger"; */
+.c-swiper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 4rem;
+}
+.c-swiper .swiper-wrapper {
+  width: 100%;
+}
+@media (min-width: 769px) {
+  .c-swiper .swiper-wrapper {
+    width: 100%;
+  }
+}
+.c-swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  max-width: 26.2rem;
+  max-height: 11.6rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+@media (min-width: 769px) {
+  .c-swiper .swiper-wrapper .swiper-slide img {
+    max-width: 36.1rem;
+    max-height: 16rem;
+  }
+}
+.c-swiper .page {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 10rem;
+  bottom: 0;
+}
+.c-swiper .page .swiper-pagination {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: -0.08em;
+}
+.c-swiper .page .swiper-button-prev, .c-swiper .page .swiper-button-next {
+  position: absolute;
+  top: 45%;
+  display: block;
+  width: 6.1rem;
+  height: 6.1rem;
+  background-repeat: no-repeat;
+}
+.c-swiper .page .swiper-button-prev {
+  left: 11%;
+  background-image: url("../../../images/arrow_btnL.png");
+}
+@media (min-width: 769px) {
+  .c-swiper .page .swiper-button-prev {
+    left: 35%;
+  }
+}
+.c-swiper .page .swiper-button-next {
+  right: 11%;
+  background-image: url("../../../images/arrow_btnR.png");
+}
+@media (min-width: 769px) {
+  .c-swiper .page .swiper-button-next {
+    right: 35%;
+  }
+}
+
 .p-mainVisual {
   background: linear-gradient(13deg, #0384f5, #0068c0 67%, transparent 67%), url(../images/main_photo-sp.jpg);
   background-position: top center;
@@ -455,6 +524,50 @@ header .humbugerMenu .headerNav-sp li {
 }
 @media (min-width: 769px) {
   .p-mainVisual .mainVisualContainer .mainBg p .ca {
+    letter-spacing: unset;
+  }
+}
+
+.p-corpIntroduction {
+  background: #d0e7ff;
+}
+.p-corpIntroduction .corpIntroductionContainer {
+  padding-top: 4.2rem;
+  padding-bottom: 3.9rem;
+}
+@media (min-width: 769px) {
+  .p-corpIntroduction .corpIntroductionContainer {
+    padding-top: 7.4rem;
+    padding-bottom: 5.4rem;
+    width: 100%;
+    max-width: 120.4rem;
+  }
+}
+.p-corpIntroduction .corpIntroductionContainer h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.6666666667;
+  text-align: center;
+}
+@media (min-width: 769px) {
+  .p-corpIntroduction .corpIntroductionContainer h2 {
+    font-size: 2.5rem;
+    line-height: 1.6;
+  }
+}
+.p-corpIntroduction .corpIntroductionContainer h2 span {
+  color: #1989ff;
+  font-size: 2.6rem;
+  line-height: 1.0384615385;
+  vertical-align: text-bottom;
+  letter-spacing: -0.01em;
+  padding-left: 0.2rem;
+  padding-right: 0.4rem;
+}
+@media (min-width: 769px) {
+  .p-corpIntroduction .corpIntroductionContainer h2 span {
+    font-size: 4rem;
+    line-height: 1;
     letter-spacing: unset;
   }
 }
