@@ -9,9 +9,13 @@
 @use "layout/_footer.scss";
 
 @use "object/component/_swiper.scss";
+@use "object/component/_workCard.scss";
+@use "object/component/_reasonCard.scss";
 
 @use "object/project/_mainVisual.scss";
 @use "object/project/_corpIntroduction.scss";
+@use "object/project/_work.scss";
+@use "object/project/_reason.scss";
 
 /* @use "object/utility/spacing"; */
 
