@@ -1092,5 +1092,248 @@ header .humbugerMenu .headerNav-sp li {
   }
 }
 
+.p-voice {
+  background: #f2f2f2;
+}
+.p-voice .voiceContainer {
+  display: block;
+  width: 89.8%;
+  margin: 0 auto;
+  padding-top: 1.2rem;
+}
+@media (min-width: 769px) {
+  .p-voice .voiceContainer {
+    padding-top: 10.3rem;
+    width: 100%;
+  }
+}
+.p-voice .voiceContainer h2 {
+  position: relative;
+  font-size: 2.6rem;
+  font-weight: 900;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 2.7rem;
+}
+@media (min-width: 769px) {
+  .p-voice .voiceContainer h2 {
+    font-size: 4rem;
+    line-height: 1;
+    margin-bottom: 4.2rem;
+  }
+}
+.p-voice .voiceContainer h2 span {
+  width: 100%;
+  position: absolute;
+  top: 1.6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #1989ff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+@media (min-width: 769px) {
+  .p-voice .voiceContainer h2 span {
+    font-size: 2.8rem;
+    line-height: 1;
+    top: -0.6rem;
+  }
+}
+.p-voice .voiceContainer > p {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+@media (min-width: 769px) {
+  .p-voice .voiceContainer > p {
+    font-size: 2.6rem;
+    line-height: 1.0769230769;
+    margin-left: 18.3%;
+  }
+}
+.p-voice .voiceContainer .voiceContents {
+  padding-top: 3.3rem;
+  padding-bottom: 3rem;
+}
+@media (min-width: 769px) {
+  .p-voice .voiceContainer .voiceContents {
+    padding-top: 4.2rem;
+  }
+}
+.p-voice .voiceContainer .voiceContents .voiceCard {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3.5rem;
+}
+@media (min-width: 769px) {
+  .p-voice .voiceContainer .voiceContents .voiceCard {
+    width: 86.6%;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 4rem;
+  }
+}
+.p-voice .voiceContainer .voiceContents .voiceCard img {
+  width: 11.9rem;
+  height: 11.9rem;
+  margin-top: 3.4rem;
+  background-size: cover;
+}
+@media (min-width: 769px) {
+  .p-voice .voiceContainer .voiceContents .voiceCard img {
+    width: 13.2rem;
+    height: 13.2rem;
+    margin-top: 8.5rem;
+    margin-bottom: 8.2rem;
+  }
+}
+.p-voice .voiceContainer .voiceContents .voiceCard .voiceTexts {
+  margin-top: 3.8rem;
+  padding-bottom: 5.7rem;
+}
+@media (min-width: 769px) {
+  .p-voice .voiceContainer .voiceContents .voiceCard .voiceTexts {
+    width: 66.8rem;
+    margin-top: unset;
+    margin-left: 5rem;
+    margin-right: 11.6rem;
+    padding-bottom: unset;
+  }
+}
+.p-voice .voiceContainer .voiceContents .voiceCard .voiceTexts h3 {
+  position: relative;
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1.4705882353;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+@media (min-width: 769px) {
+  .p-voice .voiceContainer .voiceContents .voiceCard .voiceTexts h3 {
+    font-size: 2.3rem;
+    line-height: 1.2173913043;
+    -moz-text-align-last: left;
+         text-align-last: left;
+    margin-bottom: 1.4rem;
+  }
+}
+.p-voice .voiceContainer .voiceContents .voiceCard .voiceTexts h3::before {
+  position: absolute;
+  top: -58%;
+  left: 7.2%;
+  content: "\f10d";
+  font: var(--fa-font-solid);
+  color: #afd2fe;
+  font-size: 2rem;
+}
+@media (min-width: 769px) {
+  .p-voice .voiceContainer .voiceContents .voiceCard .voiceTexts h3::before {
+    top: -3.2rem;
+    left: -4%;
+    font-size: 3rem;
+  }
+}
+.p-voice .voiceContainer .voiceContents .voiceCard .voiceTexts > p {
+  position: relative;
+  width: 84.8%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.6666666667;
+  margin: 0 auto;
+}
+@media (min-width: 769px) {
+  .p-voice .voiceContainer .voiceContents .voiceCard .voiceTexts > p {
+    font-size: 1.6rem;
+    line-height: 1.4375;
+    width: 100%;
+  }
+}
+.p-voice .voiceContainer .voiceContents .voiceCard .voiceTexts > p::after {
+  position: absolute;
+  content: "\f10e";
+  font: var(--fa-font-solid);
+  color: #afd2fe;
+  font-size: 2rem;
+  bottom: -23%;
+  right: 0;
+}
+@media (min-width: 769px) {
+  .p-voice .voiceContainer .voiceContents .voiceCard .voiceTexts > p::after {
+    font-size: 3rem;
+    bottom: -3rem;
+    right: -2.4%;
+  }
+}
+.p-voice .voiceContainer .voiceContents .voiceCard .voiceTexts.woman {
+  margin-top: 4.1rem;
+  padding-bottom: 5.2rem;
+}
+@media (min-width: 769px) {
+  .p-voice .voiceContainer .voiceContents .voiceCard .voiceTexts.woman {
+    margin-top: unset;
+    margin-left: 12.9rem;
+    margin-right: 5rem;
+    padding-bottom: unset;
+  }
+}
+.p-voice .voiceContainer .voiceContents .voiceCard .voiceTexts.woman h3 {
+  margin-bottom: 2.7rem;
+}
+@media (min-width: 769px) {
+  .p-voice .voiceContainer .voiceContents .voiceCard .voiceTexts.woman h3 {
+    margin-top: -0.4rem;
+    margin-bottom: 1.2rem;
+  }
+}
+.p-voice .voiceContainer .voiceContents .voiceCard .voiceTexts.woman h3::before {
+  top: -65%;
+  left: 7.2%;
+}
+@media (min-width: 769px) {
+  .p-voice .voiceContainer .voiceContents .voiceCard .voiceTexts.woman h3::before {
+    top: -3rem;
+    left: -4%;
+  }
+}
+.p-voice .voiceContainer .voiceContents .voiceCard .voiceTexts.woman > p::after {
+  bottom: -25%;
+  right: 0;
+}
+@media (min-width: 769px) {
+  .p-voice .voiceContainer .voiceContents .voiceCard .voiceTexts.woman > p::after {
+    bottom: -3.8rem;
+    right: -2rem;
+  }
+}
+@media (min-width: 769px) {
+  .p-voice .voiceContainer .voiceContents .voiceCard.reverse {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-left: auto;
+  }
+}
+@media (min-width: 769px) {
+  .p-voice .voiceContainer .voiceContents .voiceCard.reverse img {
+    margin-top: 7.5rem;
+    margin-bottom: 7.5rem;
+  }
+}
+@media (min-width: 769px) {
+  .p-voice .voiceContainer .voiceContents .voiceCard.reverse .woman {
+    margin-top: unset;
+    margin-left: 12.4rem;
+    margin-right: 4.3rem;
+  }
+}
+
+.p-step .stepContainer h2 {
+  font-size: 2.6rem;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
 /* @use "object/utility/spacing"; */
 /*# sourceMappingURL=style.css.map */
