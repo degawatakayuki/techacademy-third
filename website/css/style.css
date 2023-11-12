@@ -259,6 +259,41 @@ header .humbugerMenu .headerNav-sp li {
   padding-bottom: 0.3rem;
 }
 
+footer .footerContainer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+@media (min-width: 769px) {
+  footer .footerContainer {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+}
+footer .footerContainer img {
+  width: 11.7rem;
+  height: 2.1rem;
+  margin: 0 auto;
+  margin-bottom: 2.2rem;
+}
+@media (min-width: 769px) {
+  footer .footerContainer img {
+    width: 22.7rem;
+    height: 4rem;
+    margin-bottom: 4.2rem;
+  }
+}
+footer .footerContainer small {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1;
+}
+@media (min-width: 769px) {
+  footer .footerContainer small {
+    font-size: 1.4rem;
+  }
+}
+
 .c-swiper {
   width: 100%;
   overflow: hidden;
@@ -435,7 +470,7 @@ header .humbugerMenu .headerNav-sp li {
     margin-bottom: 5rem;
   }
 }
-.c-reasonCard .accordion-title {
+.c-reasonCard > .accordion-title {
   position: relative;
   display: block;
   width: 100%;
@@ -449,14 +484,14 @@ header .humbugerMenu .headerNav-sp li {
   padding: 1.8rem 0 2.5rem;
 }
 @media (min-width: 769px) {
-  .c-reasonCard .accordion-title {
+  .c-reasonCard > .accordion-title {
     font-size: 1.8rem;
   }
 }
-.c-reasonCard .accordion-title.open::after {
+.c-reasonCard > .accordion-title.open::after {
   content: "ー";
 }
-.c-reasonCard .accordion-title::after {
+.c-reasonCard > .accordion-title::after {
   display: block;
   position: absolute;
   top: 45%;
@@ -468,7 +503,7 @@ header .humbugerMenu .headerNav-sp li {
   line-height: 1;
 }
 @media (min-width: 769px) {
-  .c-reasonCard .accordion-title::after {
+  .c-reasonCard > .accordion-title::after {
     top: 48%;
     right: 2.1rem;
     font-size: 1.8rem;
@@ -1092,8 +1127,19 @@ header .humbugerMenu .headerNav-sp li {
   padding-top: 5.6rem;
   padding-bottom: 6.4rem;
 }
+@media (min-width: 769px) {
+  .p-contact.communication .contactContainer {
+    padding-top: 7.7rem;
+    padding-bottom: 9.6rem;
+  }
+}
 .p-contact.communication .contactContainer a {
   margin: 1.7rem auto 0;
+}
+@media (min-width: 769px) {
+  .p-contact.communication .contactContainer a {
+    margin-top: 3.7rem;
+  }
 }
 
 .p-voice {
@@ -1586,6 +1632,330 @@ header .humbugerMenu .headerNav-sp li {
   }
 }
 .p-step .stepContainer .suportContents .suportList > li > ol li:last-of-type {
+  margin-bottom: unset;
+}
+
+.p-freetry {
+  background: #f2f2f2;
+  padding-top: 6.1rem;
+  padding-bottom: 8.5rem;
+}
+@media (min-width: 769px) {
+  .p-freetry {
+    padding-top: 10rem;
+    padding-bottom: 9.8rem;
+  }
+}
+.p-freetry .freetryContainer {
+  width: 32rem;
+}
+@media (min-width: 769px) {
+  .p-freetry .freetryContainer {
+    width: 100rem;
+  }
+}
+.p-freetry .freetryContainer .freetryCard {
+  margin-bottom: 3.5rem;
+  background: #fff;
+}
+@media (min-width: 769px) {
+  .p-freetry .freetryContainer .freetryCard {
+    margin-bottom: 10.2rem;
+  }
+}
+.p-freetry .freetryContainer .freetryCard > .accordion-title {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 6rem;
+  background: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1;
+  text-align: left;
+  border: 2px solid #000;
+  padding: 1.8rem 0 2.5rem 1.5rem;
+}
+@media (min-width: 769px) {
+  .p-freetry .freetryContainer .freetryCard > .accordion-title {
+    height: 8.6rem;
+    font-size: 2.3rem;
+    line-height: 1.2173913043;
+    padding: 2.4rem 0 2.2rem 4.8rem;
+  }
+}
+.p-freetry .freetryContainer .freetryCard > .accordion-title.open::after {
+  content: "ー";
+}
+.p-freetry .freetryContainer .freetryCard > .accordion-title::after {
+  display: block;
+  position: absolute;
+  top: 47%;
+  transform: translateY(-50%);
+  right: 2.2rem;
+  content: "＋";
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1;
+}
+@media (min-width: 769px) {
+  .p-freetry .freetryContainer .freetryCard > .accordion-title::after {
+    top: 48%;
+    right: 2.1rem;
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+}
+.p-freetry .freetryContainer .freetryCard .freetryContents {
+  padding: 2.7rem 1rem 3rem;
+}
+@media (min-width: 769px) {
+  .p-freetry .freetryContainer .freetryCard .freetryContents {
+    padding: 4rem 6.7rem 3.6rem;
+  }
+}
+.p-freetry .freetryContainer .freetryCard .freetryContents h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 2.4rem;
+}
+@media (min-width: 769px) {
+  .p-freetry .freetryContainer .freetryCard .freetryContents h3 {
+    font-size: 2.3rem;
+    line-height: 1.2173913043;
+  }
+}
+.p-freetry .freetryContainer .freetryCard .freetryContents h3.talk {
+  margin-bottom: 2.7rem;
+}
+.p-freetry .freetryContainer .freetryCard .freetryContents h3.task, .p-freetry .freetryContainer .freetryCard .freetryContents h3.setting {
+  margin-bottom: 2.5rem;
+}
+.p-freetry .freetryContainer .freetryCard .freetryContents .freetryText {
+  margin-bottom: 2.7rem;
+}
+@media (min-width: 769px) {
+  .p-freetry .freetryContainer .freetryCard .freetryContents .freetryText {
+    margin-bottom: 2.9rem;
+  }
+}
+.p-freetry .freetryContainer .freetryCard .freetryContents .freetryText.task {
+  margin-bottom: 3rem;
+}
+.p-freetry .freetryContainer .freetryCard .freetryContents .freetryText.task > dl {
+  padding-bottom: 2.9rem;
+}
+@media (min-width: 769px) {
+  .p-freetry .freetryContainer .freetryCard .freetryContents .freetryText.task > dl {
+    padding-bottom: 3.6rem;
+  }
+}
+.p-freetry .freetryContainer .freetryCard .freetryContents .freetryText.talk {
+  margin-bottom: 1.9rem;
+}
+@media (min-width: 769px) {
+  .p-freetry .freetryContainer .freetryCard .freetryContents .freetryText.talk {
+    margin-bottom: 2rem;
+  }
+}
+.p-freetry .freetryContainer .freetryCard .freetryContents .freetryText.ol {
+  margin-bottom: 2rem;
+}
+.p-freetry .freetryContainer .freetryCard .freetryContents .freetryText.ol > dl {
+  padding-bottom: 2.9rem;
+}
+@media (min-width: 769px) {
+  .p-freetry .freetryContainer .freetryCard .freetryContents .freetryText.ol > dl {
+    padding-bottom: 3.6rem;
+  }
+}
+.p-freetry .freetryContainer .freetryCard .freetryContents .freetryText.groupTalk {
+  margin-bottom: 3.1rem;
+}
+.p-freetry .freetryContainer .freetryCard .freetryContents .freetryText.groupTalk > dl {
+  padding-bottom: 3rem;
+}
+@media (min-width: 769px) {
+  .p-freetry .freetryContainer .freetryCard .freetryContents .freetryText.groupTalk > dl {
+    padding-bottom: 3.6rem;
+  }
+}
+.p-freetry .freetryContainer .freetryCard .freetryContents .freetryText.setting > dl {
+  margin-bottom: 2rem;
+  padding-left: 1.8rem;
+  padding-bottom: 3rem;
+}
+@media (min-width: 769px) {
+  .p-freetry .freetryContainer .freetryCard .freetryContents .freetryText.setting > dl {
+    padding-left: 5.7rem;
+    padding-bottom: 3.6rem;
+  }
+}
+.p-freetry .freetryContainer .freetryCard .freetryContents .freetryText.setting > dl:nth-child(2) {
+  padding-bottom: 2.8rem;
+}
+@media (min-width: 769px) {
+  .p-freetry .freetryContainer .freetryCard .freetryContents .freetryText.setting > dl:nth-child(2) {
+    padding-bottom: 3.6rem;
+  }
+}
+.p-freetry .freetryContainer .freetryCard .freetryContents .freetryText.setting > dl:nth-child(3) {
+  padding-bottom: 2.9rem;
+}
+@media (min-width: 769px) {
+  .p-freetry .freetryContainer .freetryCard .freetryContents .freetryText.setting > dl:nth-child(3) {
+    padding-bottom: 3.6rem;
+  }
+}
+.p-freetry .freetryContainer .freetryCard .freetryContents .freetryText.setting > dl:nth-child(3) > dd > ol > li {
+  list-style: "◆";
+  list-style-position: inside;
+}
+.p-freetry .freetryContainer .freetryCard .freetryContents .freetryText.setting > dl:nth-child(3) > dd > ol > li::marker {
+  letter-spacing: -0.2em;
+}
+.p-freetry .freetryContainer .freetryCard .freetryContents .freetryText.setting > dl > dd {
+  margin-top: 2.7rem;
+}
+.p-freetry .freetryContainer .freetryCard .freetryContents .freetryText dl {
+  background: #d0e7ff;
+  border-radius: 1rem;
+  padding: 1.8rem 3.4rem 3.2rem 1.7rem;
+}
+@media (min-width: 769px) {
+  .p-freetry .freetryContainer .freetryCard .freetryContents .freetryText dl {
+    padding: 2.3rem 6rem 3.6rem 5.7rem;
+  }
+}
+.p-freetry .freetryContainer .freetryCard .freetryContents .freetryText dl dt {
+  position: relative;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.4375;
+}
+@media (min-width: 769px) {
+  .p-freetry .freetryContainer .freetryCard .freetryContents .freetryText dl dt {
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+}
+.p-freetry .freetryContainer .freetryCard .freetryContents .freetryText dl dt::before {
+  content: "Q.";
+  margin-right: -0.4rem;
+}
+.p-freetry .freetryContainer .freetryCard .freetryContents .freetryText dl dt.open::after {
+  content: "ー";
+}
+.p-freetry .freetryContainer .freetryCard .freetryContents .freetryText dl dt::after {
+  display: block;
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  right: -2.4rem;
+  content: "＋";
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1;
+}
+@media (min-width: 769px) {
+  .p-freetry .freetryContainer .freetryCard .freetryContents .freetryText dl dt::after {
+    top: 48%;
+    right: -3rem;
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+}
+.p-freetry .freetryContainer .freetryCard .freetryContents .freetryText dl dd {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-top: 2.6rem;
+}
+@media (min-width: 769px) {
+  .p-freetry .freetryContainer .freetryCard .freetryContents .freetryText dl dd {
+    font-size: 1.6rem;
+    line-height: 1.4375;
+    margin-top: 2.7rem;
+  }
+}
+.p-freetry .freetryContainer .freetryCard .freetryContents .freetryText dl dd::before {
+  content: "A.";
+  margin-right: -0.4rem;
+}
+.p-freetry .freetryContainer .freetryCard .freetryContents .freetryText dl dd ol {
+  padding-top: 1rem;
+}
+.p-freetry .freetryContainer .freetryCard .freetryContents .freetryText dl dd ol li {
+  list-style: "・";
+  list-style-position: inside;
+  margin-bottom: 1rem;
+}
+.p-freetry .freetryContainer .freetryCard .freetryContents .freetryText dl dd ol li:last-of-type {
+  margin-bottom: unset;
+}
+.p-freetry .freetryContainer .freetryCard .freetryContents .freetryText dl dd ol li.talk::marker {
+  letter-spacing: -0.2em;
+}
+.p-freetry .freetryContainer .freetryCard .freetryContents.plan {
+  padding: 2.6rem 2.8rem 2.3rem 1.3rem;
+}
+@media (min-width: 769px) {
+  .p-freetry .freetryContainer .freetryCard .freetryContents.plan {
+    padding: 6.9rem 5rem 8rem;
+  }
+}
+.p-freetry .freetryContainer .freetryCard .freetryContents.plan > dl {
+  display: flex;
+}
+@media (min-width: 769px) {
+  .p-freetry .freetryContainer .freetryCard .freetryContents.plan > dl {
+    gap: 14.4rem;
+  }
+}
+.p-freetry .freetryContainer .freetryCard .freetryContents.plan > dl dt, .p-freetry .freetryContainer .freetryCard .freetryContents.plan > dl dd {
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1.4705882353;
+}
+@media (min-width: 769px) {
+  .p-freetry .freetryContainer .freetryCard .freetryContents.plan > dl dt, .p-freetry .freetryContainer .freetryCard .freetryContents.plan > dl dd {
+    font-size: 2.3rem;
+    line-height: 1.2173913043;
+  }
+}
+.p-freetry .freetryContainer .freetryCard .freetryContents.plan > dl dt span, .p-freetry .freetryContainer .freetryCard .freetryContents.plan > dl dd span {
+  color: #1989ff;
+  letter-spacing: 0;
+  line-height: 1.5882352941;
+}
+.p-freetry .freetryContainer .freetryCard .freetryContents.plan > dl dt {
+  display: block;
+  width: 10rem;
+  margin-bottom: 2.5rem;
+}
+.p-freetry .freetryContainer .freetryCard .freetryContents.plan > dl dd {
+  flex: 1 1;
+  letter-spacing: -0.1em;
+}
+@media (min-width: 769px) {
+  .p-freetry .freetryContainer .freetryCard .freetryContents.plan > dl dd {
+    font-size: 1.8rem;
+    letter-spacing: 0;
+  }
+  .p-freetry .freetryContainer .freetryCard .freetryContents.plan > dl dd span {
+    font-size: 2.3rem;
+    line-height: 1.2173913043;
+    color: #1989ff;
+    letter-spacing: 0;
+  }
+}
+@media (min-width: 769px) {
+  .p-freetry .freetryContainer .freetryCard .freetryContents.plan > dl dd.free {
+    padding-top: 0.3rem;
+  }
+}
+.p-freetry .freetryContainer .freetryCard.plan {
   margin-bottom: unset;
 }
 

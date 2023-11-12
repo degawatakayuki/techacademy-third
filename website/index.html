@@ -136,7 +136,7 @@
         <div class="reasonContainer container">
             <h2>Dentatsuが選ばれる理由</h2>
             <div class="reasonContens">
-                <div class="c-reasonCard">
+                <div class="c-reasonCard accordion-parent">
                     <h3><span>01</span>「手間、面倒•••」を感じさせない</h3>
                     <p>作業効率にこだわった直感的なUIだから、仕事のパフォーマンスも向上！</p>
                     <a href="#" class="accordion-title">詳しくはこちら</a>
@@ -217,7 +217,7 @@
                         </div><!-- /.reasonText -->
                     </div><!-- /.reasonAccodionContents -->
                 </div><!-- /.reasonCard -->
-                <div class="c-reasonCard Security">
+                <div class="c-reasonCard Security accordion-parent">
                     <h3><span>02</span>業務に集中できる安心の<br class="sp-br">セキュリティ</h3>
                     <p>不正アクセスや情報漏えいなどのリスクを回避する機能が充実！</p>
                     <a href="#" class="accordion-title">詳しくはこちら</a>
@@ -366,123 +366,125 @@
         </div><!-- /.contactContainer -->
     </div><!-- /.p-contact -->
     <section class="p-freetry">
-        <div class="freetryContainer">
-            <div class="freetryCard">
-                <a href="">FAQ</a>
-                <div class="freetryContents">
+        <div class="freetryContainer container">
+            <div class="freetryCard accordion-parent">
+                <a href="#" class="accordion-title">FAQ</a>
+                <div class="freetryContents accordion-content">
                     <h3>料金</h3>
                     <div class="freetryText">
-                        <dl>
-                            <dt>
+                        <dl class="accordion-parent">
+                            <dt class="accordion-title">
                                 料金はかかりますか？
                             </dt>
-                            <dd>
+                            <dd class="accordion-content">
                                 フリープランは無料でご利用いただけます。詳しくは「料金プラン」をご覧ください。<br>
                                 2022年6月までにフリープランにお申し込みいただいた企業様には、ベースプランと同等の導入支援サポートを無償でご提供します。
                             </dd>
                         </dl>
                     </div><!-- /.freetryText -->
-                    <h3>トーク</h3>
-                    <div class="freetryText">
-                        <dl>
-                            <dt>
+                    <h3 class="talk">トーク</h3>
+                    <div class="freetryText talk">
+                        <dl class="accordion-parent">
+                            <dt class="accordion-title">
                                 グループトークに人数制限はありますか？
                             </dt>
-                            <dd>
-                                制限値は1000です。対象バージョン：ver1.2～
+                            <dd class="accordion-content">
+                                制限値は1000です。<br class="sp-br">
+                                対象バージョン：ver1.2～
                             </dd>
                         </dl>
                     </div><!-- /.freetryText -->
-                    <div class="freetryText">
-                        <dl>
-                            <dt>
+                    <div class="freetryText talk">
+                        <dl class="accordion-parent">
+                            <dt class="accordion-title">
                                 既読表示はありますか？
                             </dt>
-                            <dd>
+                            <dd class="accordion-content">
                                 あります。トーク作成時に「既読表示の設定」として、以下の3つから選択できます。
-                                <ul>
+                                <ol>
                                     <li>既読数表示なし</li>
                                     <li>既読数表示</li>
                                     <li>既読数と既読者を表示</li>
-                                </ul>
+                                </ol>
                             </dd>
                         </dl>
                     </div><!-- /.freetryText -->
-                    <div class="freetryText">
-                        <dl>
-                            <dt>
+                    <div class="freetryText ol">
+                        <dl class="accordion-parent">
+                            <dt class="accordion-title">
                                 ファイルを添付することは可能ですか？
                             </dt>
-                            <dd>
+                            <dd class="accordion-content">
                                 可能です。
-                                <ul>
-                                    <li>
+                                <ol>
+                                    <li class="talk">
                                         モバイルアプリ<br>
                                         静止画と動画（1分以内）が添付が可能です。静止画は自動的にリサイズされます。
                                     </li>
-                                    <li>
+                                    <li class="talk">
                                         Webアプリ<br>
                                         画像/動画/その他のファイル形式（管理者が許可したもの）が添付可能です。<br>
-                                        ただし、1ファイルあたり10MBまでの制限がございます。
+                                        ただし、1ファイルあたり10MBまでの制限がございます。<br>
+                                        また、拡張子の無いファイルは添付できません。
                                     </li>
-                                </ul>
+                                </ol>
                             </dd>
                         </dl>
                     </div><!-- /.freetryText -->
-                    <div class="freetryText">
-                        <dl>
-                            <dt>
+                    <div class="freetryText groupTalk">
+                        <dl class="accordion-parent">
+                            <dt class="accordion-title">
                                 グループトーク（トークルーム）に保存期限はありますか？
                             </dt>
-                            <dd>
+                            <dd class="accordion-content">
                                 トークルームには保存期限はありませんがメッセージデータは2年間の保存期間を設けています。<br>
                                 そのため、トークルーム内のメッセージは2年経過したものから消去されていきます。
                             </dd>
                         </dl>
                     </div><!-- /.freetryText -->
-                    <h3>タスク</h3>
-                    <div class="freetryText">
-                        <dl>
-                            <dt>
+                    <h3 class="task">タスク</h3>
+                    <div class="freetryText task">
+                        <dl class="accordion-parent">
+                            <dt class="accordion-title">
                                 各タスクの内容を確認したいです。
                             </dt>
-                            <dd>
+                            <dd class="accordion-content">
                                 管理システムからタスクの実施状況を確認いただけます。<br>
                                 また、各タスクのレポートについてCSV形式でダウンロードすることが可能です。
                             </dd>
                         </dl>
                     </div><!-- /.freetryText -->
-                    <h3>設定</h3>
-                    <div class="freetryText">
-                        <dl>
-                            <dt>
+                    <h3 class="setting">設定</h3>
+                    <div class="freetryText setting">
+                        <dl class="accordion-parent">
+                            <dt class="accordion-title">
                                 １ユーザーに紐付けられる組織はいくつまでですか？
                             </dt>
-                            <dd>
+                            <dd class="accordion-content">
                                 組織は５階層まで設定できます。<br>
-                                さらに細かい組織が必要な場合は、繋げて表記するか、「備考」項目をご利用く
+                                さらに細かい組織が必要な場合は、繋げて表記するか、「備考」項目をご利用ください。
                             </dd>
                         </dl>
-                        <dl>
-                            <dt>
+                        <dl class="accordion-parent">
+                            <dt class="accordion-title">
                                 着信音や通知の設定を変更できますか？
                             </dt>
-                            <dd>
+                            <dd class="accordion-content">
                                 プッシュ通知の通知設定が可能です。（通知オン／通知オフ／午前7時まで通知オフ）<br>
                                 また、「通知音設定」で通知音の変更が可能です。
                             </dd>
                         </dl>
-                        <dl>
-                            <dt>
+                        <dl class="accordion-parent">
+                            <dt class="accordion-title">
                                 ユーザーを一括登録（編集/削除）したいです。
                             </dt>
-                            <dd>
+                            <dd class="accordion-content">
                                 CSVインポートによる一括登録／編集が可能です。<br>
                                 ユーザ情報の変更（既存情報への上書き）、ユーザアカウントの削除も同様の操作で行えます。 
                                 <ol>
                                     <li>
                                         一括編集<br>
-                                        SVインポートによる一括編集が可能です。<br>
+                                        CSVインポートによる一括編集が可能です。<br>
                                         登録済みユーザーのログインIDと一致する場合、パスワード以外の項目について、CSVファイルの内容でユーザー情報が上書きされます。
                                     </li>
                                     <li>
@@ -493,12 +495,21 @@
                                 </ol>
                             </dd>
                         </dl>
+                        <dl class="accordion-parent">
+                            <dt class="accordion-title">
+                                マイプロフィールは編集できますか？
+                            </dt>
+                            <dd class="accordion-content">
+                                パスワード、およびプロフィール画像の変更が可能です。<br>
+                                上記以外のプロフィール項目の変更は、管理者が管理システムにて行ってください。
+                            </dd>
+                        </dl>
                     </div><!-- /.freetryText -->
                 </div><!-- /.freetryContents -->
             </div><!-- /.freetryCard -->
-            <div class="freetryCard">
-                <a href="">料金プラン</a>
-                <div class="freetryContents">
+            <div class="freetryCard plan accordion-parent">
+                <a href="#" class="accordion-title">料金プラン</a>
+                <div class="freetryContents plan accordion-content">
                     <dl>
                         <dt>初期費用</dt>
                         <dd>
@@ -507,7 +518,7 @@
                     </dl>
                     <dl>
                         <dt>月額料金</dt>
-                        <dd>
+                        <dd class="free">
                             フリープランなら<span>無料</span><br>
                             ベースプランなら<span>330円(税込)／IDで初月は無料</span>です。
                         </dd>
