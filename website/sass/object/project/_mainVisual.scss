@@ -1,0 +1,242 @@
+@use "../../foundation/mixins" as min;
+@use "../../foundation/variables" as var;
+
+.p-mainVisual {
+
+    background: linear-gradient(13deg, #0384f5, #0068c0 67%, transparent 67%), url(../images/main_photo-sp.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    margin-top: 6rem;
+
+    @include min.breakpoint(tablet) {
+
+        height: 50rem;
+        background: unset;
+        background-position: center right;
+        background-repeat: no-repeat;
+        background-image: url("../../../images/main_photo.jpg");
+        background-size: cover;
+        margin-top: 7.6rem;
+    }
+
+    .mainVisualContainer {
+
+        position: relative;
+        padding-bottom: 4rem;
+
+        @include min.breakpoint(tablet) {
+
+            width: 90%;
+            max-width: 120.4rem;
+        }
+
+        .mainCatch {
+
+            @include min.breakpoint(tablet) {
+
+                padding-top: 9.8rem;
+            }
+
+            h1 {
+
+                display: inline-block;
+                font-size: 2.6rem;
+                font-weight: 700;
+                line-height: calc(40 / 26);
+                margin-top: 20rem;
+                margin-bottom: 6.9rem;
+
+                @include min.breakpoint(tablet) {
+
+                    font-size: 4rem;
+                    line-height: 1;
+                    color: var.$text-white;
+                    margin-top: unset;
+                    margin-bottom: 3.9rem;
+                    font-weight: 900;
+                }
+
+                span {
+
+                    display: inline-block;
+                    background: var.$bg-white;
+                    padding-left: 0.5rem;
+                    padding-right: 0.1rem;
+                    padding-bottom: 0.1rem;
+
+                    @include min.breakpoint(tablet) {
+
+                        background: unset;
+                        padding-left: unset;
+                        padding-right: unset;
+                        padding-bottom: unset;
+                    }
+
+                    &:last-of-type {
+
+                        margin-top: 0.5rem;
+
+                        @include min.breakpoint(tablet) {
+
+                            margin-top: unset;
+                        }
+                    }
+                }
+            }
+
+            p {
+
+                color: var.$text-white;
+                font-size: 1.5rem;
+                font-weight: 500;
+                line-height: calc(27 / 15);
+
+                @include min.breakpoint(tablet) {
+
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    line-height: calc(28 / 16);
+                }
+            }
+
+            ul {
+
+                color: var.$text-white;
+                font-size: 1.5rem;
+                font-weight: 500;
+                line-height: calc(27 / 15);
+                margin-top: 2.8rem;
+                margin-left: 2.2rem;
+                margin-bottom: 3.3rem;
+
+                @include min.breakpoint(tablet) {
+                    
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    line-height: calc(28 / 16);
+                    margin-top: 2rem;
+                    margin-bottom: 4rem;
+                }
+
+                li {
+
+                    position: relative;
+
+                    &::before {
+
+                        position: absolute;
+                        font-family: "Font Awesome 5 Free";
+                        content: "\f058";
+                        font: var(--fa-font-solid);
+                        color: var.$bg-white;
+                        font-weight: normal;
+                        left: -2.2rem;
+                        top: 1.4rem;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+
+            a {
+
+                display: block;
+                width: 30rem;
+                height: 5.6rem;
+                text-align: center;
+                font-size: 1.6rem;
+                font-weight: 900;
+                line-height: 1;
+                color: var.$text-black;
+                background: var.$bg-green;
+                border-radius: 0.5rem;
+                padding: 2rem 0;
+                margin: 0 auto;
+                box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.16);
+
+                @include min.breakpoint(tablet) {
+
+                    margin: unset;
+                }
+            }
+        }
+
+        .mainBg {
+
+            position: absolute;
+            display: flex;
+            top: 25rem;
+            right: 0.8rem;
+
+            @include min.breakpoint(tablet) {
+
+                top: unset;
+                bottom: 0;
+                right: -3.9%;
+            }
+
+            @include min.breakpoint(pc) {
+
+                bottom: -8%;
+            }
+
+            p {
+
+                display: block;
+                width: 9.5rem;
+                height: 9.5rem;
+                text-align: center;
+                font-size: 1.2rem;
+                font-weight: 700;
+                line-height: calc(17 / 12);
+                border-radius: 50%;
+                background: linear-gradient(125deg, #effcad, #dcf98f 50%, #bdfa3e 100%);
+                padding: 3rem 0;
+                box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.16);
+
+                @include min.breakpoint(tablet) {
+
+                    width: 14rem;
+                    height: 14rem;
+                    
+                    font-size: 1.5rem;
+                    line-height: calc(25 / 15);
+                    padding: 4.5rem 0;
+                }
+
+                &:first-of-type {
+
+                    margin-right: 0.4rem;
+
+                    @include min.breakpoint(tablet) {
+
+                        margin-right: 1rem;
+                    }
+                }
+
+                .po {
+
+                    font-family: "Poppins";
+                    font-size: 1.5rem;
+                    font-weight: 900;
+                    line-height: calc(17 / 15);
+
+                    @include min.breakpoint(tablet) {
+
+                        font-size: 2.2rem;
+                        line-height: calc(25 / 22);
+                    }
+                }
+
+                .ca {
+
+                    letter-spacing: -0.1em;
+
+                    @include min.breakpoint(tablet) {
+                        
+                        letter-spacing: unset;
+                    }
+                }
+            }
+        }
+    }
+}

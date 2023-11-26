@@ -1,0 +1,108 @@
+@use "../../foundation/mixins" as min;
+@use "../../foundation/variables" as var;
+
+.p-work {
+
+    .workContainer {
+
+        padding-top: 3rem;
+        padding-bottom: 4.9rem;
+
+        @include min.breakpoint(pc) {
+
+            padding-top: 10.4rem;
+            padding-bottom: 9.8rem;
+        }
+
+        h2 {
+
+            font-size: 2.6rem;
+            font-weight: 900;
+            line-height: calc(39 / 26);
+            text-align: center;
+
+            @include min.breakpoint(pc) {
+
+                font-size: 4rem;
+                line-height: calc(28 / 40);
+            }
+            
+            span {
+
+                letter-spacing: 0.02em;
+
+                @include min.breakpoint(pc) {
+
+                    letter-spacing: 0.01em;
+                }
+            }
+        }
+
+        .workContents {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 3.1rem;
+            padding-bottom: 6rem;
+            gap: 2rem;
+
+            @include min.breakpoint(pc) {
+
+                flex-direction: row;
+                padding-top: 8.8rem;
+                padding-bottom: 6.8rem;
+                justify-content: center;
+            }
+        }
+
+        .workFooter {
+
+            @include min.breakpoint(pc) {
+
+                display: flex;
+                justify-content: flex-start;
+                margin-left: 3.4rem;
+            }
+            
+            img {
+
+                width: 12.9rem;
+                height: 2.3rem;
+                margin: 0 auto 2.5rem;
+
+                @include min.breakpoint(pc) {
+
+                    width: 21.1rem;
+                    height: 3.7rem;
+                    margin: unset;
+                    margin-right: 4.5rem;
+                    margin-top: 0.7rem;
+                }
+            }
+
+            p {
+
+                width: 29.5rem;
+                font-size: 1.5rem;
+                font-weight: 700;
+                line-height: calc(21 / 15);
+                margin: 0 auto;
+
+                @include min.breakpoint(pc) {
+
+                    width: auto;
+                    font-size: 1.6rem;
+                    line-height: calc(23 / 16);
+                    margin: unset;
+                    padding-right: 3rem;
+                }
+
+                span {
+                    
+                    letter-spacing: 0.01em;
+                }
+            }
+        }
+    }
+}

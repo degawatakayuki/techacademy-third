@@ -1,0 +1,45 @@
+@use "../../foundation/mixins" as min;
+@use "../../foundation/variables" as var;
+
+.p-reason {
+
+    background: var.$bg-litebule;
+
+    .reasonContainer {
+
+        padding-bottom: 12.6rem;
+
+        @include min.breakpoint(pc) {
+
+            padding-bottom: 10rem;
+            max-width: 100rem;
+        }
+
+        h2 {
+
+            font-size: 2.6rem;
+            font-weight: 900;
+            line-height: calc(39 / 26);
+            text-align: center;
+            padding-top: 2.6rem;
+
+            @include min.breakpoint(pc) {
+
+                font-size: 4rem;
+                line-height: 1;
+                padding-top: 9.7rem;
+            }
+        }
+
+        .reasonContens {
+
+            width: 32rem;
+            margin: 0 auto;
+
+            @include min.breakpoint(pc) {
+
+                width: 100%;
+            }
+        }
+    }
+}

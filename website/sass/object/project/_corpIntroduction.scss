@@ -1,0 +1,53 @@
+@use "../../foundation/mixins" as min;
+@use "../../foundation/variables" as var;
+
+.p-corpIntroduction {
+
+    background: var.$bg-litebule;
+
+    .corpIntroductionContainer {
+
+        padding-top: 4.2rem;
+        padding-bottom: 3.9rem;
+
+        @include min.breakpoint(pc) {
+
+            padding-top: 7.4rem;
+            padding-bottom: 5.4rem;
+            width: 90%;
+            max-width: 120.4rem;
+        }
+
+        h2 {
+
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: calc(40 / 15);
+            text-align: center;
+
+            @include min.breakpoint(pc) {
+
+                font-size: 2.5rem;
+                line-height: calc(40 / 25);
+            }
+
+            span {
+
+                color: var.$text-bule;
+                font-size: 2.6rem;
+                line-height: calc(27 / 26);
+                vertical-align: text-bottom;
+                letter-spacing: -0.01em;
+                padding-left: 0.2rem;
+                padding-right: 0.4rem;
+
+                @include min.breakpoint(pc) {
+                    
+                    font-size: 4rem;
+                    line-height: 1;
+                    letter-spacing: unset;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+@use "../../foundation/mixins" as min;
+@use "../../foundation/variables" as var;
+
+.c-workCard {
+
+    display: block;
+    width: 32rem;
+    height: 33.5rem;
+    background: var.$bg-blue;
+    border-radius: 1rem;
+    color: var.$text-white;
+    text-align: center;
+    visibility: hidden;
+    
+    @include min.breakpoint(pc) {
+
+        width: 34.5rem;
+        height: 45.1rem;
+        padding: 0 2.8rem;
+    }
+
+    img {
+
+        display: block;
+        width: 12rem;
+        height: 12rem;
+        border-radius: 50%;
+        margin: 4rem auto 2rem;
+
+        @include min.breakpoint(pc) {
+
+            width: 16.8rem;
+            height: 16.8rem;
+            margin: 6rem auto 3.5rem;
+        }
+    }
+
+    p {
+        
+        font-size: 1.4rem;
+        font-weight: 700;
+        line-height: calc(21 / 14);
+        
+        @include min.breakpoint(pc) {
+
+            font-size: 1.6rem;
+            line-height: calc(23 / 16);
+        }
+    }
+
+    h3 {
+
+        font-size: 1.6rem;
+        font-weight: 900;
+        line-height: calc(24 / 16);
+        margin-top: 3.6rem;
+
+        @include min.breakpoint(pc) {
+            
+            font-size: 2.3rem;
+            line-height: calc(28 / 23);
+            margin-top: 4.3rem;
+        }
+    }
+}
