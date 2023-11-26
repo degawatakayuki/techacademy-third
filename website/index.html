@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" id="anime">
 <head>
     <!-- サイトのメタ情報 -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title><!-- ***************HPタイトル******************* -->
+    <title>Dentatsu｜ビジネスチャット利用者数No.1</title><!-- ***************HPタイトル******************* -->
     <meta name="description" content=""><!-- ***************HP説明******************* -->
     <meta name="keywords" content=""><!-- ***************検索キーワード******************* -->
     <meta name="robots" content="noindex"/><!-- ***************完成したら削除******************* -->
@@ -16,12 +16,13 @@
     <script src="https://kit.fontawesome.com/bc4df06650.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700;900&family=Noto+Serif+JP:wght@400;600;700;900&family=Oleo+Script&family=Poppins:wght@700&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="js/jquery.waypoints.min.js"></script>
 
     
     <!-- OGPを設定 -->
-    <meta property="og:site_name" content="Dentatsu｜ビジネスチャット利用者数No.1" />
+    <meta property="og:site_name" content="Dentatsu｜ビジネスチャット利用者数No.1">
     <meta property="og:title" content="Dentatsu｜ビジネスチャット利用者数No.1">
     <meta property="og:description" content="Dentatsu（デンタツ）は、導入企業325,000社突破！利用者数No.1のビジネスチャットツールです。無料で使用でき、サポートも手厚くセキュリティ対策も万全！あなたの働き方をサポートします。">
     <meta property="og:type" content="article">
@@ -35,12 +36,12 @@
             <img src="images/logo.jpg" alt="ヘッダーロゴ">
             <nav class="headerNav">
                 <ul>
-                    <li><a href="">業務効率化</a></li>
-                    <li><a href="">セキュリティ</a></li>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">料金プラン</a></li>
+                    <li><a href="#streamlining">業務効率化</a></li>
+                    <li><a href="#security">セキュリティ</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#plan">料金プラン</a></li>
                 </ul>
-                <a href="" class="application">お申し込み</a>
+                <a href="#" class="application">お申し込み</a>
             </nav><!-- /.headerNav -->
             <a class="hambugerIcon-sp" id="hambugerIcon-sp">
                 <span></span>
@@ -49,11 +50,11 @@
             </a>
         </div><!-- /.haderContainer -->
         <nav class="humbugerMenu" id="humbugerMenu">
-            <ul class="headerNav-sp">
-                <li><a href="">業務効率化</a></li>
-                <li><a href="">セキュリティ</a></li>
-                <li><a href="">FAQ</a></li>
-                <li><a href="">料金プラン</a></li>
+            <ul class="headerNav-sp" id="headerNav">
+                <li><a href="#streamlining" class="spList">業務効率化</a></li>
+                <li><a href="#security" class="spList">セキュリティ</a></li>
+                <li><a href="#faq" class="spList">FAQ</a></li>
+                <li><a href="#plan" class="spList">料金プラン</a></li>
             </ul>
         </nav><!-- /.humbugerMenu -->
     </header>
@@ -69,7 +70,7 @@
                     <li>基本機能は無料で利用可能！</li>
                     <li>国内データセンターでの運用でセキュリティも安心</li>
                 </ul>
-                <a href="">無料ではじめる</a>
+                <a href="#" class="contactBtn">無料ではじめる</a>
             </div><!-- /.mainCatch -->
             <div class="mainBg">
                 <p class="point1"><span class="po">100万ID</span><br>の導入実績</p>
@@ -101,7 +102,7 @@
         <div class="workContainer container">
             <h2><span>Dentatsu</span>で<br class="sp-br">一歩先の働き方を</h2>
             <div class="workContents">
-                <div class="c-workCard">
+                <div class="c-workCard card01">
                     <img src="images/work_1.jpg" alt="仕事画像01">
                     <p>
                         Cc/Bcc漏れ防止など<br>
@@ -109,7 +110,7 @@
                     </p>
                     <h3>意思決定がスピードアップ</h3>
                 </div><!-- /.workCard -->
-                <div class="c-workCard">
+                <div class="c-workCard card02">
                     <img src="images/work_2.jpg" alt="仕事画像02">
                     <p>
                         無駄な時間をカットして<br>
@@ -117,7 +118,7 @@
                     </p>
                     <h3>業務効率がアップ</h3>
                 </div><!-- /.workCard -->
-                <div class="c-workCard">
+                <div class="c-workCard card03">
                     <img src="images/work_3.jpg" alt="仕事画像03">
                     <p>
                         チャットで気軽に<br>
@@ -136,7 +137,7 @@
         <div class="reasonContainer container">
             <h2>Dentatsuが選ばれる理由</h2>
             <div class="reasonContens">
-                <div class="c-reasonCard accordion-parent">
+                <div class="c-reasonCard accordion-parent" id="streamlining">
                     <h3><span>01</span>「手間、面倒•••」を感じさせない</h3>
                     <p>作業効率にこだわった直感的なUIだから、仕事のパフォーマンスも向上！</p>
                     <a href="#" class="accordion-title">詳しくはこちら</a>
@@ -217,7 +218,7 @@
                         </div><!-- /.reasonText -->
                     </div><!-- /.reasonAccodionContents -->
                 </div><!-- /.reasonCard -->
-                <div class="c-reasonCard Security accordion-parent">
+                <div class="c-reasonCard Security accordion-parent" id="security">
                     <h3><span>02</span>業務に集中できる安心の<br class="sp-br">セキュリティ</h3>
                     <p>不正アクセスや情報漏えいなどのリスクを回避する機能が充実！</p>
                     <a href="#" class="accordion-title">詳しくはこちら</a>
@@ -286,7 +287,7 @@
     <div class="p-contact">
         <div class="contactContainer">
             <p>日々の業務を今すぐバージョンアップ！</p>
-            <a href="">無料ではじめる</a>
+            <a href="#" class="contactBtn">無料ではじめる</a>
         </div><!-- /.contactContainer -->
     </div><!-- /.p-contact -->
     <section class="p-voice">
@@ -294,7 +295,7 @@
             <h2><span>＼100万IDを超える導入実績／</span><br>多くのお客様に<br class="sp-br">ご利用いただいています！</h2>
             <p>実際の活用事例をご紹介</p>
             <ul class="voiceContents">
-                <li class="voiceCard">
+                <li class="voiceCard voice-left">
                     <img src="images/businessman_icon.jpg" alt="男性画像">
                     <div class="voiceTexts">
                         <h3>導入企業のサクセスストーリー</h3>
@@ -304,7 +305,7 @@
                         </p>
                     </div><!-- /.voiceTexts -->
                 </li><!-- /.voiceCard -->
-                <li class="voiceCard reverse">
+                <li class="voiceCard reverse voice-right">
                     <img src="images/businesswoman_icon.jpg" alt="女性画像">
                     <div class="voiceTexts woman">
                         <h3>大会事務局の運営にも大活躍！</h3>
@@ -324,9 +325,9 @@
                 だから、PCやスマホの利用・ツール活用に不慣れな方でも安心してお申し込みいただけます。
             </p>
             <ul class="stepList">
-                <li><div class="stepNum">STEP1</div><p>WEBサイトからオンラインお申込み</p></li>
-                <li><div class="stepNum">STEP2</div><p>受付完了通知メールがお客様宛に送信されます。</p></li>
-                <li><div class="stepNum">STEP3</div><p>お手続きが完了しますとお客様宛にご案内メールが届き、管理画面にログインすることでユーザ登録が可能となります。</p></li>
+                <li class="stepNum01"><div class="stepNum">STEP1</div><p>WEBサイトからオンラインお申込み</p></li>
+                <li class="stepNum02"><div class="stepNum">STEP2</div><p>受付完了通知メールがお客様宛に送信されます。</p></li>
+                <li class="stepNum03"><div class="stepNum">STEP3</div><p>お手続きが完了しますとお客様宛にご案内メールが届き、管理画面にログインすることでユーザ登録が可能となります。</p></li>
             </ul><!-- /.stepList -->
             <div class="suportContents">
                 <h3>
@@ -342,7 +343,7 @@
                         </ol>
                     </li>
                     <li class="row2">
-                        <h4 class="row2">お客様の利用に合わせた設定、<br>利用者登録方法のレクチャー </h4>
+                        <h4 class="row2">お客様の利用に合わせた設定、<br class="sp-br">利用者登録方法のレクチャー </h4>
                         <ol>
                             <li>お客様のセキュリティーレベルや利用方法に合わせた各種設定をご提案します。</li>
                             <li>運用上のご心配事もその場で回答いたします。</li>
@@ -362,13 +363,13 @@
     <div class="p-contact communication">
         <div class="contactContainer">
             <p>社内コミュニケーション改革で<br class="sp-br">今すぐ業務効率化！</p>
-            <a href="">無料ではじめる</a>
+            <a href="#" class="contactBtn">無料ではじめる</a>
         </div><!-- /.contactContainer -->
     </div><!-- /.p-contact -->
     <section class="p-freetry">
         <div class="freetryContainer container">
             <div class="freetryCard accordion-parent">
-                <a href="#" class="accordion-title">FAQ</a>
+                <a href="#" class="accordion-title faq" id="faq">FAQ</a>
                 <div class="freetryContents accordion-content">
                     <h3>料金</h3>
                     <div class="freetryText">
@@ -376,7 +377,7 @@
                             <dt class="accordion-title">
                                 料金はかかりますか？
                             </dt>
-                            <dd class="accordion-content">
+                            <dd class="accordion-content faq-content">
                                 フリープランは無料でご利用いただけます。詳しくは「料金プラン」をご覧ください。<br>
                                 2022年6月までにフリープランにお申し込みいただいた企業様には、ベースプランと同等の導入支援サポートを無償でご提供します。
                             </dd>
@@ -388,7 +389,7 @@
                             <dt class="accordion-title">
                                 グループトークに人数制限はありますか？
                             </dt>
-                            <dd class="accordion-content">
+                            <dd class="accordion-content faq-content">
                                 制限値は1000です。<br class="sp-br">
                                 対象バージョン：ver1.2～
                             </dd>
@@ -399,7 +400,7 @@
                             <dt class="accordion-title">
                                 既読表示はありますか？
                             </dt>
-                            <dd class="accordion-content">
+                            <dd class="accordion-content faq-content">
                                 あります。トーク作成時に「既読表示の設定」として、以下の3つから選択できます。
                                 <ol>
                                     <li>既読数表示なし</li>
@@ -414,7 +415,7 @@
                             <dt class="accordion-title">
                                 ファイルを添付することは可能ですか？
                             </dt>
-                            <dd class="accordion-content">
+                            <dd class="accordion-content faq-content">
                                 可能です。
                                 <ol>
                                     <li class="talk">
@@ -436,7 +437,7 @@
                             <dt class="accordion-title">
                                 グループトーク（トークルーム）に保存期限はありますか？
                             </dt>
-                            <dd class="accordion-content">
+                            <dd class="accordion-content faq-content">
                                 トークルームには保存期限はありませんがメッセージデータは2年間の保存期間を設けています。<br>
                                 そのため、トークルーム内のメッセージは2年経過したものから消去されていきます。
                             </dd>
@@ -448,7 +449,7 @@
                             <dt class="accordion-title">
                                 各タスクの内容を確認したいです。
                             </dt>
-                            <dd class="accordion-content">
+                            <dd class="accordion-content faq-content">
                                 管理システムからタスクの実施状況を確認いただけます。<br>
                                 また、各タスクのレポートについてCSV形式でダウンロードすることが可能です。
                             </dd>
@@ -460,7 +461,7 @@
                             <dt class="accordion-title">
                                 １ユーザーに紐付けられる組織はいくつまでですか？
                             </dt>
-                            <dd class="accordion-content">
+                            <dd class="accordion-content faq-content">
                                 組織は５階層まで設定できます。<br>
                                 さらに細かい組織が必要な場合は、繋げて表記するか、「備考」項目をご利用ください。
                             </dd>
@@ -469,7 +470,7 @@
                             <dt class="accordion-title">
                                 着信音や通知の設定を変更できますか？
                             </dt>
-                            <dd class="accordion-content">
+                            <dd class="accordion-content faq-content">
                                 プッシュ通知の通知設定が可能です。（通知オン／通知オフ／午前7時まで通知オフ）<br>
                                 また、「通知音設定」で通知音の変更が可能です。
                             </dd>
@@ -478,7 +479,7 @@
                             <dt class="accordion-title">
                                 ユーザーを一括登録（編集/削除）したいです。
                             </dt>
-                            <dd class="accordion-content">
+                            <dd class="accordion-content faq-content">
                                 CSVインポートによる一括登録／編集が可能です。<br>
                                 ユーザ情報の変更（既存情報への上書き）、ユーザアカウントの削除も同様の操作で行えます。 
                                 <ol>
@@ -499,7 +500,7 @@
                             <dt class="accordion-title">
                                 マイプロフィールは編集できますか？
                             </dt>
-                            <dd class="accordion-content">
+                            <dd class="accordion-content faq-content">
                                 パスワード、およびプロフィール画像の変更が可能です。<br>
                                 上記以外のプロフィール項目の変更は、管理者が管理システムにて行ってください。
                             </dd>
@@ -508,7 +509,7 @@
                 </div><!-- /.freetryContents -->
             </div><!-- /.freetryCard -->
             <div class="freetryCard plan accordion-parent">
-                <a href="#" class="accordion-title">料金プラン</a>
+                <a href="#" class="accordion-title" id="plan">料金プラン</a>
                 <div class="freetryContents plan accordion-content">
                     <dl>
                         <dt>初期費用</dt>
@@ -537,5 +538,7 @@
     <script src="js/bamburger.js"></script>
     <script src="js/myswiper.js" defer></script>
     <script src="js/accodion.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/waypoints.js"></script>
 </body>
 </html>

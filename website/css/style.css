@@ -72,13 +72,6 @@ select {
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    scroll-behavior: auto !important;
-  }
-}
 html {
   font-size: 2.6666666667vw;
   color: #000;
@@ -146,8 +139,38 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.animeContainer {
+  overflow: hidden;
+  position: relative;
+  opacity: 0;
+  animation: fadeIn 3s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+#anime {
+  position: relative;
+  animation: anime 3s ease;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes anime {
+  100% {
+    opacity: 1;
+  }
+}
 header {
   height: 6rem;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 200;
+  top: 0;
 }
 @media (min-width: 769px) {
   header {
@@ -198,6 +221,31 @@ header .haderContainer .headerNav {
   }
   header .haderContainer .headerNav ul li {
     padding: 2rem 0;
+    overflow: hidden;
+  }
+  header .haderContainer .headerNav ul li a {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+  }
+  header .haderContainer .headerNav ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: -0.2rem;
+    left: -100%;
+    width: 100%;
+    height: 0.2rem;
+    background: #000;
+  }
+  @keyframes border-line {
+    100% {
+      left: 0;
+      opacity: 1;
+    }
+  }
+  header .haderContainer .headerNav ul li a:hover::before {
+    animation: border-line 0.5s ease;
+    animation-fill-mode: forwards;
   }
 }
 header .haderContainer .headerNav .application {
@@ -209,6 +257,10 @@ header .haderContainer .headerNav .application {
   text-align: center;
   padding: 2.6rem 8rem;
   margin-left: 5rem;
+}
+header .haderContainer .headerNav .application:hover {
+  background: #fff;
+  color: #1989ff;
 }
 header .haderContainer .hambugerIcon-sp {
   position: relative;
@@ -340,6 +392,7 @@ footer .footerContainer small {
   width: 6.1rem;
   height: 6.1rem;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .c-swiper .page .swiper-button-prev {
   left: 11%;
@@ -368,6 +421,7 @@ footer .footerContainer small {
   border-radius: 1rem;
   color: #fff;
   text-align: center;
+  visibility: hidden;
 }
 @media (min-width: 769px) {
   .c-workCard {
@@ -433,7 +487,7 @@ footer .footerContainer small {
     font-weight: 700;
     text-align: left;
     padding-top: 9.4rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2.7rem;
   }
 }
 .c-reasonCard h3 span {
@@ -467,7 +521,7 @@ footer .footerContainer small {
   .c-reasonCard > p {
     font-size: 1.8rem;
     line-height: 1.5;
-    margin-bottom: 5rem;
+    margin-bottom: 4.8rem;
   }
 }
 .c-reasonCard > .accordion-title {
@@ -511,6 +565,7 @@ footer .footerContainer small {
   }
 }
 .c-reasonCard .reasonAccodionContents {
+  display: none;
   background: #fff;
   padding: 2rem 1.6rem 0.2rem;
   margin-bottom: 3.3rem;
@@ -704,13 +759,20 @@ footer .footerContainer small {
     margin-top: 5.2rem;
   }
 }
+@media (min-width: 769px) {
+  .c-reasonCard.Security .reasonAccodionContents .reasonTexts .reasonTextCard .reasonContents h5 {
+    padding-top: 3.8rem;
+    padding-bottom: 3.3rem;
+  }
+}
 
 .p-mainVisual {
   background: linear-gradient(13deg, #0384f5, #0068c0 67%, transparent 67%), url(../images/main_photo-sp.jpg);
   background-position: top center;
   background-repeat: no-repeat;
+  margin-top: 6rem;
 }
-@media (min-width: 769px) {
+@media (min-width: 641px) {
   .p-mainVisual {
     height: 50rem;
     background: unset;
@@ -718,19 +780,20 @@ footer .footerContainer small {
     background-repeat: no-repeat;
     background-image: url("../../../images/main_photo.jpg");
     background-size: cover;
+    margin-top: 7.6rem;
   }
 }
 .p-mainVisual .mainVisualContainer {
   position: relative;
   padding-bottom: 4rem;
 }
-@media (min-width: 769px) {
+@media (min-width: 641px) {
   .p-mainVisual .mainVisualContainer {
-    width: 100%;
+    width: 90%;
     max-width: 120.4rem;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 641px) {
   .p-mainVisual .mainVisualContainer .mainCatch {
     padding-top: 9.8rem;
   }
@@ -743,13 +806,14 @@ footer .footerContainer small {
   margin-top: 20rem;
   margin-bottom: 6.9rem;
 }
-@media (min-width: 769px) {
+@media (min-width: 641px) {
   .p-mainVisual .mainVisualContainer .mainCatch h1 {
     font-size: 4rem;
     line-height: 1;
     color: #fff;
     margin-top: unset;
     margin-bottom: 3.9rem;
+    font-weight: 900;
   }
 }
 .p-mainVisual .mainVisualContainer .mainCatch h1 span {
@@ -759,7 +823,7 @@ footer .footerContainer small {
   padding-right: 0.1rem;
   padding-bottom: 0.1rem;
 }
-@media (min-width: 769px) {
+@media (min-width: 641px) {
   .p-mainVisual .mainVisualContainer .mainCatch h1 span {
     background: unset;
     padding-left: unset;
@@ -770,7 +834,7 @@ footer .footerContainer small {
 .p-mainVisual .mainVisualContainer .mainCatch h1 span:last-of-type {
   margin-top: 0.5rem;
 }
-@media (min-width: 769px) {
+@media (min-width: 641px) {
   .p-mainVisual .mainVisualContainer .mainCatch h1 span:last-of-type {
     margin-top: unset;
   }
@@ -781,7 +845,7 @@ footer .footerContainer small {
   font-weight: 500;
   line-height: 1.8;
 }
-@media (min-width: 769px) {
+@media (min-width: 641px) {
   .p-mainVisual .mainVisualContainer .mainCatch p {
     font-size: 1.6rem;
     font-weight: 700;
@@ -797,7 +861,7 @@ footer .footerContainer small {
   margin-left: 2.2rem;
   margin-bottom: 3.3rem;
 }
-@media (min-width: 769px) {
+@media (min-width: 641px) {
   .p-mainVisual .mainVisualContainer .mainCatch ul {
     font-size: 1.6rem;
     font-weight: 700;
@@ -826,7 +890,7 @@ footer .footerContainer small {
   height: 5.6rem;
   text-align: center;
   font-size: 1.6rem;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 1;
   color: #454545;
   background: #bdfa3e;
@@ -835,7 +899,7 @@ footer .footerContainer small {
   margin: 0 auto;
   box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.16);
 }
-@media (min-width: 769px) {
+@media (min-width: 641px) {
   .p-mainVisual .mainVisualContainer .mainCatch a {
     margin: unset;
   }
@@ -846,11 +910,16 @@ footer .footerContainer small {
   top: 25rem;
   right: 0.8rem;
 }
-@media (min-width: 769px) {
+@media (min-width: 641px) {
   .p-mainVisual .mainVisualContainer .mainBg {
     top: unset;
-    bottom: -8%;
+    bottom: 0;
     right: -3.9%;
+  }
+}
+@media (min-width: 769px) {
+  .p-mainVisual .mainVisualContainer .mainBg {
+    bottom: -8%;
   }
 }
 .p-mainVisual .mainVisualContainer .mainBg p {
@@ -866,7 +935,7 @@ footer .footerContainer small {
   padding: 3rem 0;
   box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.16);
 }
-@media (min-width: 769px) {
+@media (min-width: 641px) {
   .p-mainVisual .mainVisualContainer .mainBg p {
     width: 14rem;
     height: 14rem;
@@ -878,7 +947,7 @@ footer .footerContainer small {
 .p-mainVisual .mainVisualContainer .mainBg p:first-of-type {
   margin-right: 0.4rem;
 }
-@media (min-width: 769px) {
+@media (min-width: 641px) {
   .p-mainVisual .mainVisualContainer .mainBg p:first-of-type {
     margin-right: 1rem;
   }
@@ -886,9 +955,10 @@ footer .footerContainer small {
 .p-mainVisual .mainVisualContainer .mainBg p .po {
   font-family: "Poppins";
   font-size: 1.5rem;
+  font-weight: 900;
   line-height: 1.1333333333;
 }
-@media (min-width: 769px) {
+@media (min-width: 641px) {
   .p-mainVisual .mainVisualContainer .mainBg p .po {
     font-size: 2.2rem;
     line-height: 1.1363636364;
@@ -897,7 +967,7 @@ footer .footerContainer small {
 .p-mainVisual .mainVisualContainer .mainBg p .ca {
   letter-spacing: -0.1em;
 }
-@media (min-width: 769px) {
+@media (min-width: 641px) {
   .p-mainVisual .mainVisualContainer .mainBg p .ca {
     letter-spacing: unset;
   }
@@ -914,7 +984,7 @@ footer .footerContainer small {
   .p-corpIntroduction .corpIntroductionContainer {
     padding-top: 7.4rem;
     padding-bottom: 5.4rem;
-    width: 100%;
+    width: 90%;
     max-width: 120.4rem;
   }
 }
@@ -1043,6 +1113,7 @@ footer .footerContainer small {
 @media (min-width: 769px) {
   .p-reason .reasonContainer {
     padding-bottom: 10rem;
+    max-width: 100rem;
   }
 }
 .p-reason .reasonContainer h2 {
@@ -1065,17 +1136,17 @@ footer .footerContainer small {
 }
 @media (min-width: 769px) {
   .p-reason .reasonContainer .reasonContens {
-    width: 100rem;
+    width: 100%;
   }
 }
 
 .p-contact {
-  background: url(../../../images/start_bg_sp.jpg);
+  background-image: url(../../../images/start_bg_sp.jpg);
   background-size: cover;
 }
 @media (min-width: 769px) {
   .p-contact {
-    background: url(../../../images/start_bg_s.jpg);
+    background-image: url(../../../images/start_bg_s.jpg);
   }
 }
 .p-contact .contactContainer {
@@ -1120,6 +1191,7 @@ footer .footerContainer small {
 @media (min-width: 769px) {
   .p-contact .contactContainer a {
     font-size: 1.6rem;
+    font-weight: 900;
     margin-top: 3.7rem;
   }
 }
@@ -1134,12 +1206,44 @@ footer .footerContainer small {
   }
 }
 .p-contact.communication .contactContainer a {
+  transition: transform 0.2s ease;
   margin: 1.7rem auto 0;
 }
 @media (min-width: 769px) {
   .p-contact.communication .contactContainer a {
     margin-top: 3.7rem;
   }
+}
+.p-contact.communication .contactContainer a:hover {
+  transform: scale(1.05);
+}
+
+.contactBtn {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+.contactBtn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 100%);
+  transform: skewX(-25deg);
+}
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+.contactBtn:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+.contactBtn:hover::before {
+  animation: shine 0.8s ease;
 }
 
 .p-voice {
@@ -1220,6 +1324,7 @@ footer .footerContainer small {
   flex-direction: column;
   align-items: center;
   margin-bottom: 3.5rem;
+  visibility: hidden;
 }
 @media (min-width: 769px) {
   .p-voice .voiceContainer .voiceContents .voiceCard {
@@ -1393,7 +1498,7 @@ footer .footerContainer small {
 }
 @media (min-width: 769px) {
   .p-step .stepContainer {
-    padding-top: 9.1rem;
+    padding-top: 9.3rem;
     padding-bottom: 10rem;
   }
 }
@@ -1446,6 +1551,7 @@ footer .footerContainer small {
   font-weight: 700;
   line-height: 1.4666666667;
   background: linear-gradient(102deg, #1989ff 32.6%, transparent 32.6%);
+  visibility: hidden;
 }
 @media (min-width: 769px) {
   .p-step .stepContainer .stepList li {
@@ -1549,6 +1655,7 @@ footer .footerContainer small {
     max-width: 107.5rem;
     display: flex;
     justify-content: space-between;
+    gap: 2rem;
   }
 }
 .p-step .stepContainer .suportContents .suportList > li {
@@ -1582,6 +1689,7 @@ footer .footerContainer small {
 .p-step .stepContainer .suportContents .suportList > li h4 {
   font-size: 1.7rem;
   line-height: 1.4705882353;
+  font-weight: 700;
   text-align: center;
   margin-bottom: 2.3rem;
 }
@@ -1651,7 +1759,8 @@ footer .footerContainer small {
 }
 @media (min-width: 769px) {
   .p-freetry .freetryContainer {
-    width: 100rem;
+    width: 90%;
+    max-width: 100rem;
   }
 }
 .p-freetry .freetryContainer .freetryCard {
@@ -1867,6 +1976,7 @@ footer .footerContainer small {
   }
 }
 .p-freetry .freetryContainer .freetryCard .freetryContents .freetryText dl dd {
+  display: none;
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.4;
@@ -1955,8 +2065,14 @@ footer .footerContainer small {
     padding-top: 0.3rem;
   }
 }
+.p-freetry .freetryContainer .freetryCard > .accordion-content {
+  display: none;
+}
 .p-freetry .freetryContainer .freetryCard.plan {
   margin-bottom: unset;
+}
+.p-freetry .freetryContainer .accordion-content {
+  display: none;
 }
 
 /* @use "object/utility/spacing"; */
